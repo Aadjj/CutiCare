@@ -153,6 +153,8 @@ def render_common_header():
 def render_home_page():
     render_common_header()
 
+    # Fixed path: Since modules/home/layout.py is one level deeper inside home/,
+    # we step up twice ("..", "..") to reach the root folder where Dr.png resides.
     current_dir = os.path.dirname(os.path.abspath(__file__))
     image_path = os.path.join(current_dir, "..", "..", "Dr.png")
     img_base64 = get_image_base64(image_path)
