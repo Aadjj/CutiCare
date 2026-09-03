@@ -1,4 +1,5 @@
 # modules/home/doctors.py
+import os
 import base64
 import streamlit as st
 from modules.home.layout import render_common_header
@@ -6,17 +7,23 @@ from modules.home.layout import render_common_header
 
 def get_image_base64(image_path):
     try:
-        with open(image_path, "rb") as img_file:
-            return base64.b64encode(img_file.read()).decode()
+        if os.path.exists(image_path):
+            with open(image_path, "rb") as img_file:
+                return base64.b64encode(img_file.read()).decode()
     except Exception:
-        return ""
+        pass
+    return ""
 
 
 def render_doctors_page():
     # Render the persistent top utility bar and navigation header
     render_common_header()
 
-    img_base64 = get_image_base64(r"Dr.png")
+    # Build portable relative path from modules/home/ up two levels to the root directory where Dr.png is located
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    image_path = os.path.join(current_dir, "..", "..", "Dr.png")
+
+    img_base64 = get_image_base64(image_path)
     img_tag = (
         f'<img src="data:image/png;base64,{img_base64}" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #0284c7; margin-bottom: 1rem;" />'
         if img_base64
