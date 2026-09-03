@@ -153,15 +153,12 @@ def render_common_header():
 def render_home_page():
     render_common_header()
 
-    # Fixed path: Since modules/home/layout.py is one level deeper inside home/,
-    # we step up twice ("..", "..") to reach the root folder where Dr.png resides.
     current_dir = os.path.dirname(os.path.abspath(__file__))
     image_path = os.path.join(current_dir, "..", "..", "Dr.png")
     img_base64 = get_image_base64(image_path)
 
     img_tag = f'<img src="data:image/png;base64,{img_base64}" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #86efac; margin-bottom: 0.75rem;" />' if img_base64 else '<div style="font-size: 3rem;">👨‍⚕️</div>'
 
-    # Render everything inside a single unified CSS Flexbox container (immune to browser dark-mode color overrides)
     st.markdown(f"""
         <style>
         .hero-container {{
@@ -284,6 +281,36 @@ def render_home_page():
             color: #64748b !important;
             line-height: 1.4;
         }}
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {{
+            .hero-container {{
+                flex-direction: column !important;
+                padding: 2rem 1.5rem !important;
+                text-align: center;
+            }}
+            .hero-right-card {{
+                width: 100% !important;
+                margin-top: 1.5rem;
+            }}
+            .hero-title {{
+                font-size: 2.1rem !important;
+            }}
+            .block-container {{
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }}
+            .top-bar-container {{
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 12px 16px !important;
+            }}
+            .top-bar-left, .top-bar-right {{
+                justify-content: center;
+                gap: 15px;
+            }}
+        }}
         </style>
 
         <div class="hero-container">
@@ -300,7 +327,6 @@ def render_home_page():
         </div>
     """, unsafe_allow_html=True)
 
-    # Check query params to handle the appointment click event cleanly
     if st.query_params.get("action") == "book_appointment":
         st.query_params.clear()
         st.session_state.show_classic_login = True
