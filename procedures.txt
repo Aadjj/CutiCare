@@ -1,0 +1,4 @@
+Procedure_ID|Patient_UID|Patient_Name|Procedure_Name|Performing_Doctor|Date|Time_Slot|Status|Clinical_Notes|Request_Status|Requested_New_Date|Requested_New_Time
+PROC-7001|PAT-1001|Ananya Sharma|Chemical Peel (Dermatology)|Dr. Sarah Jenkins (General Medicine)|2026-08-19|10:00 AM|Rescheduled||Approved|2026-08-19|10:00 AM
+PROC-7002|PAT-1001|Ananya Sharma|Chemical Peel (Dermatology)|Dr. Sarah Jenkins (General Medicine)|2026-08-16|10:00 AM|Cancelled||Approved Cancellation||
+PROC-7003|PAT-1011|Humera|Chemical Peel (Dermatology)|Dr. Sarah Jenkins (General Medicine)|2026-08-19|11:30 AM|Rescheduled||Approved|2026-08-19|11:30 AM
