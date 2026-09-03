@@ -1,0 +1,2 @@
+Payment_ID|Patient_UID|Patient_Name|Item_Type|Item_ID|Amount|Payment_Method|Transaction_Ref|Status|Timestamp
+PAY-1001|PAT-1011|Humera|Procedure Charge|PROC-7003|8000.0|UPI / NetBanking|asd1awsd61awd5a1|Confirmed & Paid|2026-08-16 03:28:39

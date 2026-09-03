@@ -1,0 +1,10 @@
+Med_ID|Medication_Name|Category|Stock_Quantity|Unit_Price|Expiry_Date|Last_Updated
+MED-1001|Clobetasol Propionate 0.05% Ointment|Topical Corticosteroid|150|₹250|2027-12-31|2026-08-18 18:21:54
+MED-1002|Tacrolimus 0.1% Topical Cream|Immunomodulator|80|₹450|2027-06-30|2026-08-18 18:21:54
+MED-1003|Cetirizine 10mg Tablets|Antihistamine|500|₹40|2028-03-15|2026-08-18 18:21:55
+MED-1004|Ketoconazole 2% Antifungal Shampoo|Antifungal|120|₹320|2027-09-10|2026-08-18 18:21:55
+MED-1005|Isotretinoin 20mg Capsules|Retinoid|200|₹650|2028-01-20|2026-08-18 18:21:55
+MED-1006|Clindamycin 1% Topical Gel|Antibiotic|95|₹180|2027-11-05|2026-08-18 18:21:55
+MED-1007|Mupirocin 2% Ointment|Antibiotic|110|₹150|2027-08-14|2026-08-18 18:21:55
+MED-1008|Hydrocortisone 1% Cream|Mild Corticosteroid|300|₹120|2028-05-30|2026-08-18 18:21:55
+MED-1009|Aqua Guard|Cream|550|₹120|2028-05-30|2026-08-18 18:21:55

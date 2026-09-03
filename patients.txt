@@ -1,0 +1,13 @@
+UID|Full_Name|DOB|Gender|Contact_Number|Email|Address|Emergency_Contact|Allergies|Pre_existing_Conditions|Registration_Date
+PAT-1001|Ananya Sharma|1995-06-15|Female|+91 98765 43210|ananya.s@example.com|Apt 4B, Jubilee Hills, Hyderabad|Ramesh Sharma (+91 98765 43211)|Penicillin|Mild Asthma|2026-01-10
+PAT-1002|Vikram Verma|1988-11-22|Male|+91 91234 56789|vikram.v@example.com|Plot 12, Banjara Hills, Hyderabad|Priya Verma (+91 91234 56790)|Sulfa Drugs|Hypertension|2026-02-01
+PAT-1003|Sneha Reddy|1992-03-10|Female|+91 99887 76655|sneha.r@example.com|Flat 302, Madhapur, Hyderabad|Kiran Reddy (+91 99887 76656)||Hypothyroidism|2026-02-05
+PAT-1004|Rahul Dravid|1973-01-11|Male|+91 94433 22110|rahul.d@example.com|Road No 36, Jubilee Hills, Hyderabad|Vijeeta Dravid (+91 94433 22111)|Aspirin||2026-02-10
+PAT-1005|Pooja Hegde|1990-10-13|Female|+91 97766 55443|pooja.h@example.com|Banjara Hills Rd 12, Hyderabad|Manjunath Hegde (+91 97766 55444)|Latex|Eczema|2026-02-12
+PAT-1006|Amitabh Bachchan|1942-10-11|Male|+91 98111 22334|amitabh.b@example.com|Jubilee Hills, Hyderabad|Jaya Bachchan (+91 98111 22335)|Codeine|Diabetes Type 2|2026-02-15
+PAT-1007|Deepika Padukone|1986-01-05|Female|+91 99000 11223|deepika.p@example.com|Gachibowli, Hyderabad|Ranveer Singh (+91 99000 11224)|Shellfish|Anxiety|2026-02-18
+PAT-1008|Manoj Bajpayee|1969-04-23|Male|+91 93322 11009|manoj.b@example.com|Kondapur, Hyderabad|Shabana Bajpayee (+91 93322 11010)|Penicillin||2026-02-20
+PAT-1009|Samantha Ruth|1987-04-28|Female|+91 95544 33221|samantha.r@example.com|Madhapur, Hyderabad|Father (+91 95544 33222)|Dust Mites|Myositis|2026-02-22
+PAT-1010|Mahesh Babu|1975-08-09|Male|+91 96655 44332|mahesh.b@example.com|Jubilee Hills, Hyderabad|Namrata Shirodkar (+91 96655 44333)|||2026-02-25
+PAT-1011|Humera|2000-02-20|Female|+91 9595984236|h@gmail.com|Nana|+91 9598959642|||2026-08-16
+PAT-1012|Humera1|2001-02-20|Female|+91 9595959694|h@gmail.com|nana|+91 9898959498|None|None|2026-08-16

@@ -1,0 +1,10 @@
+Notification_ID|Recipient_UID|Category|Message|Read_Status|Timestamp
+NOTIF-1001|STAFF|Appointment|New self-booked appointment for Humera with Dr. Sarah Jenkins (General Medicine) on 2026-08-18.|Unread|2026-08-18 02:59:00
+NOTIF-1002|STAFF|Appointment|New self-booked appointment for Humera with Dr. Sarah Jenkins (General Medicine) on 2026-08-18.|Unread|2026-08-18 03:07:00
+NOTIF-1003|STAFF|Appointment|New self-booked appointment for Humera with Dr. Sarah Jenkins (General Medicine) on 2026-08-18.|Unread|2026-08-18 03:11:07
+NOTIF-1004|STAFF|Prescription|New e-prescription queued for Ananya Sharma by Dr. Sarah Jenkins.|Unread|2026-08-18 18:12:01
+NOTIF-1005|PAT-1001|Lab Assignment|Dr. Dr. Sarah Jenkins has assigned a new lab test for you: Serum IgE Allergy Panel.|Unread|2026-08-18 18:12:01
+NOTIF-1006|STAFF|Appointment|Follow-up scheduled for Ananya Sharma on 2026-08-26 at 02:00 PM.|Unread|2026-08-18 18:12:01
+NOTIF-1007|STAFF|Prescription|New e-prescription queued for Humera by Dr. Sarah Jenkins.|Unread|2026-08-20 01:15:35
+NOTIF-1008|PAT-1011|Lab Assignment|Dr. Dr. Sarah Jenkins has assigned a new lab test for you: Fungal Culture & KOH Examination.|Unread|2026-08-20 01:15:35
+NOTIF-1009|STAFF|Appointment|Follow-up scheduled for Humera on 2026-08-24 at 11:30 AM.|Unread|2026-08-20 01:15:35
