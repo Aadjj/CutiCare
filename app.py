@@ -2,6 +2,7 @@
 import os
 import streamlit as st
 import pandas as pd
+import base64
 
 st.set_page_config(
     page_title="Cuticare Clinic EMR & Management System",
@@ -71,6 +72,19 @@ except ImportError:
         st.title("⚙️ Admin Control Panel")
         st.info("Admin module loading...")
 
+def get_root_image_base64(filename="Dr.png"):
+    # Always gets the absolute path of the root directory where app.py lives
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    image_path = os.path.join(root_dir, filename)
+
+    try:
+        if os.path.exists(image_path):
+            with open(image_path, "rb") as img_file:
+                return base64.b64encode(img_file.read()).decode()
+    except Exception:
+        pass
+    return ""
+    
 
 def main():
     # Load patient database directly from patients.txt via database module on startup
