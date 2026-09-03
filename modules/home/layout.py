@@ -78,6 +78,24 @@ def render_common_header():
             max-width: 120px !important;
             margin-left: auto;
         }
+
+        /* Global mobile responsiveness for header and top bar */
+        @media (max-width: 768px) {
+            .block-container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            .top-bar-container {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 12px 16px !important;
+            }
+            .top-bar-left, .top-bar-right {
+                justify-content: center;
+                gap: 15px;
+            }
+        }
         </style>
 
         <div class="top-bar-container">
@@ -94,7 +112,6 @@ def render_common_header():
     col_logo, nav_home, nav_about, nav_doctors, nav_services, nav_blog, nav_contact, col_login = st.columns(
         [3.0, 0.18, 0.18, 0.25, 0.25, 0.22, 0.25, 0.6], vertical_alignment="center", gap="small"
     )
-
     with col_logo:
         st.markdown("<h3 style='margin: 0; font-weight: 800;'>🏥 Cuticare Center</h3>",
                     unsafe_allow_html=True)
