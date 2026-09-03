@@ -150,7 +150,7 @@ def render_common_header():
 def render_home_page():
     render_common_header()
 
-    img_base64 = get_image_base64(r"C:\Users\aadjj\Downloads\Dr.png")
+    img_base64 = get_image_base64(r"Dr.png")
     img_tag = f'<img src="data:image/png;base64,{img_base64}" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #86efac; margin-bottom: 0.75rem;" />' if img_base64 else '<div style="font-size: 3rem;">👨‍⚕️</div>'
 
     # Render everything inside a single unified CSS Flexbox container (immune to browser dark-mode color overrides)

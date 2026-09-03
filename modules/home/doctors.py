@@ -16,7 +16,7 @@ def render_doctors_page():
     # Render the persistent top utility bar and navigation header
     render_common_header()
 
-    img_base64 = get_image_base64(r"C:\Users\aadjj\Downloads\Dr.png")
+    img_base64 = get_image_base64(r"Dr.png")
     img_tag = (
         f'<img src="data:image/png;base64,{img_base64}" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #0284c7; margin-bottom: 1rem;" />'
         if img_base64
