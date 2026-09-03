@@ -1,14 +1,17 @@
 # modules/home/layout.py
 import base64
+import os
 import streamlit as st
 
 
 def get_image_base64(image_path):
     try:
-        with open(image_path, "rb") as img_file:
-            return base64.b64encode(img_file.read()).decode()
+        if os.path.exists(image_path):
+            with open(image_path, "rb") as img_file:
+                return base64.b64encode(img_file.read()).decode()
     except Exception:
-        return ""
+        pass
+    return ""
 
 
 def render_common_header():
@@ -150,7 +153,12 @@ def render_common_header():
 def render_home_page():
     render_common_header()
 
-    img_base64 = get_image_base64(r"C:\Users\aadjj\Downloads\Dr.png")
+    # Fixed path: Since modules/home/layout.py is one level deeper inside home/,
+    # we step up twice ("..", "..") to reach the root folder where Dr.png resides.
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    image_path = os.path.join(current_dir, "..", "..", "Dr.png")
+    img_base64 = get_image_base64(image_path)
+
     img_tag = f'<img src="data:image/png;base64,{img_base64}" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #86efac; margin-bottom: 0.75rem;" />' if img_base64 else '<div style="font-size: 3rem;">👨‍⚕️</div>'
 
     # Render everything inside a single unified CSS Flexbox container (immune to browser dark-mode color overrides)
